@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FFFBCF6222AB037E00DF2D3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBCF6122AB037E00DF2D3A /* AppDelegate.swift */; };
-		FFFBCF6422AB037E00DF2D3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBCF6322AB037E00DF2D3A /* ViewController.swift */; };
+		FFFBCF6422AB037E00DF2D3A /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBCF6322AB037E00DF2D3A /* NotesViewController.swift */; };
 		FFFBCF6722AB037E00DF2D3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFFBCF6522AB037E00DF2D3A /* Main.storyboard */; };
 		FFFBCF6A22AB037E00DF2D3A /* Notepad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFFBCF6822AB037E00DF2D3A /* Notepad.xcdatamodeld */; };
 		FFFBCF6C22AB037F00DF2D3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFFBCF6B22AB037F00DF2D3A /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		FFFBCF5E22AB037E00DF2D3A /* Notepad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notepad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFBCF6122AB037E00DF2D3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFFBCF6322AB037E00DF2D3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFFBCF6322AB037E00DF2D3A /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		FFFBCF6622AB037E00DF2D3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFFBCF6922AB037E00DF2D3A /* Notepad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notepad.xcdatamodel; sourceTree = "<group>"; };
 		FFFBCF6B22AB037F00DF2D3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +37,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FFF7ADFD22AB099E0077B111 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFFBCF6322AB037E00DF2D3A /* NotesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FFF7ADFE22AB09BE0077B111 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFFBCF6522AB037E00DF2D3A /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFF7ADFF22AB0F220077B111 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFFBCF6822AB037E00DF2D3A /* Notepad.xcdatamodeld */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
 		FFFBCF5522AB037E00DF2D3A = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				FFFBCF6122AB037E00DF2D3A /* AppDelegate.swift */,
-				FFFBCF6322AB037E00DF2D3A /* ViewController.swift */,
-				FFFBCF6522AB037E00DF2D3A /* Main.storyboard */,
+				FFF7ADFD22AB099E0077B111 /* Controllers */,
+				FFF7ADFE22AB09BE0077B111 /* Views */,
 				FFFBCF6B22AB037F00DF2D3A /* Assets.xcassets */,
 				FFFBCF6D22AB037F00DF2D3A /* LaunchScreen.storyboard */,
 				FFFBCF7022AB037F00DF2D3A /* Info.plist */,
-				FFFBCF6822AB037E00DF2D3A /* Notepad.xcdatamodeld */,
+				FFF7ADFF22AB0F220077B111 /* Data Model */,
 			);
 			path = Notepad;
 			sourceTree = "<group>";
@@ -139,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFFBCF6A22AB037E00DF2D3A /* Notepad.xcdatamodeld in Sources */,
-				FFFBCF6422AB037E00DF2D3A /* ViewController.swift in Sources */,
+				FFFBCF6422AB037E00DF2D3A /* NotesViewController.swift in Sources */,
 				FFFBCF6222AB037E00DF2D3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +370,8 @@
 				FFFBCF6922AB037E00DF2D3A /* Notepad.xcdatamodel */,
 			);
 			currentVersion = FFFBCF6922AB037E00DF2D3A /* Notepad.xcdatamodel */;
-			path = Notepad.xcdatamodeld;
+			name = Notepad.xcdatamodeld;
+			path = ../Notepad.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
