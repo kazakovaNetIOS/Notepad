@@ -16,7 +16,9 @@ class NotesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         loadNotes()
     }
     
@@ -54,7 +56,7 @@ class NotesViewController: UITableViewController {
     // MARK: - Add new note
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "goToAddNote", sender: self)
     }
-    
 }
 
