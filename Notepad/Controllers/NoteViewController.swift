@@ -11,7 +11,7 @@ import CoreData
 
 class NoteViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleTextView: UITextView!
     @IBOutlet weak var textLabel: UITextView!
     
     var selectedNote: NoteItem?
@@ -19,7 +19,7 @@ class NoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = selectedNote?.title
+        titleTextView.text = selectedNote?.title
         textLabel.text = selectedNote?.text
     }
 }
