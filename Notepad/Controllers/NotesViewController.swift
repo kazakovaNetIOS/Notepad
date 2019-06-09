@@ -38,7 +38,17 @@ class NotesViewController: UITableViewController {
     // MARK: - Table view delegate methods
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        performSegue(withIdentifier: "goToNote", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToNote" {
+            let destinationVC = segue.destination as! NoteViewController
+            
+            if let indexPath = tableView.indexPathForSelectedRow {
+                destinationVC.selectedNote = self.noteArray[indexPath.row]
+            }
+        }        
     }
 
     // MARK: - Data manipulation methods
